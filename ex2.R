@@ -30,5 +30,8 @@ write.csv(y[,c(5,6)],"schoolname.csv",row.names = F)
 z %>% arrange(新生註冊率)
 z %>% arrange(desc(新生註冊率))
 tail(z,10)
+bad10=tail(z,n=10)
+summary(z)
 boxplot(z$新生註冊率)
+
 
